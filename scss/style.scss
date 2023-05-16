@@ -310,6 +310,47 @@ nav{
         width: 100%;
         height: 100%;
     }
+    .text-card{
+        width: 150px;
+        // border: 2px solid red;
+        h2{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+            color: #232536;
+        }
+        .text-bag{
+            width: 72px;
+            height: 6px;
+            background: linear-gradient(90deg, rgba(68,76,252,1) 0%, rgba(68,76,252,1) 15%, rgba(255,211,175,1) 15%, rgba(255,211,175,1) 80%, rgba(255,161,85,1) 80%, rgba(255,161,85,1) 100%);
+        }
+        p{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            margin-top: 6px;
+        }
+    }
+    a{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #444CFC;
+        opacity: 0.87;
+        svg{
+            color: #444CFC;
+        }
+    }
 }
+
+
+
 
 // section-top end
