@@ -354,3 +354,43 @@ nav{
 
 
 // section-top end
+
+
+// section-center start 
+
+.section-center{
+    height: auto;
+    padding: 100px 0;
+    background-color: #ECF8F9;
+    h5{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;        
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #000000;      
+        opacity: 0.87;
+    }
+    h1{
+        width: 580px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        color: #232536;
+    }
+    p{
+        width: 500px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
+// section-center end
