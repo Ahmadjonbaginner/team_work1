@@ -1,0 +1,121 @@
+.expertise-sec {
+    background-color: $section-bg;
+    margin-top: 96px;
+    padding: 112px 0 92px 0;
+}
+
+.expertise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include for-tabele-only {
+        flex-direction: column;
+        row-gap: 80px;
+    }
+    &__texts {
+        max-width: 624px;
+        @include for-mobile-only {
+            text-align: center;
+        }
+        &__nick {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #000000;
+            opacity: 0.87;
+            @include for-mobile-only {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 58px;
+            color: $main-color;
+            margin: 16px 0 24px 0;
+            @include for-mobile-only {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $text-color;
+            @include for-mobile-only {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+    &__right {
+        max-width: 100%;
+        display: flex;
+        position: relative;
+        padding-top: 16px;
+        flex-direction: column;
+        &__logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include for-mobile-only {
+                display: none;
+            }
+        }
+        &__card {
+            display: flex;
+            align-items: flex-start;
+            background-color: $main-bg;
+            padding: 32px;
+            justify-content: start;
+            column-gap: 16px;
+            @include for-mobile-only {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 45px 25px;
+            }
+            &__texts {
+                max-width: 303px;
+                text-align: center;
+                &__title {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #000000;
+                    @include for-mobile-only {
+                        font-size: 14px;
+                        line-height: 26px;
+                        margin: 8px 0;
+                    }
+                }
+                &__text {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: $text-color;
+                    margin-top: 8px;
+                    @include for-mobile-only {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        &__card:nth-child(3) {
+            margin: 16px 0;
+        }
+        &__line {
+            max-width: 100%;
+            min-width: 381px;
+            @include for-mobile-only {
+                min-width: 0;
+            }
+        }
+    }
+}

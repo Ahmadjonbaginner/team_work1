@@ -1,0 +1,97 @@
+.team {
+    margin-top: 96px;
+    @include for-mobile-only {
+        text-align: center;
+    }
+    &__nick {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #000000;
+        opacity: 0.87;
+        @include for-mobile-only {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 2px;
+            text-align: center;
+            opacity: 1;
+        }
+    }
+    &__title {
+        max-width: 610px;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        color: $main-color;
+        margin: 16px 0 24px 0;
+        @include for-mobile-only {
+            font-size: 28px;
+            line-height: 38px;
+            margin: 12px auto 20px auto;
+        }
+    }
+    &__text {
+        max-width: 505px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #232536;
+        opacity: 0.87;
+        @include for-mobile-only {
+            font-size: 14px;
+            line-height: 22px;
+            opacity: 1;
+            margin: 0 auto;
+        }
+    }
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 64px;
+        &__block:nth-child(5) {
+            position: relative;
+        }
+        &__block {
+            &__info {
+                position: absolute;
+                left: 48px;
+                bottom: 48px;
+                &__name {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: $main-bg;
+                    display: block;
+                    @include for-mobile-only {
+                        font-size: 20px;
+                        line-height: 32px;
+                    }
+                }
+                &__nick {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: $main-bg;
+                    opacity: 0.7;
+                    display: block;
+                    margin: 8px 0px 28px 0px;
+                    @include for-mobile-only {
+                        font-size: 12px;
+                        line-height: 18px;
+                        margin: 6px 0 24px 0;
+                    }
+                }
+                &__icons {
+                    display: flex;
+                    column-gap: 25px;
+                    @include for-mobile-only {
+                        column-gap: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

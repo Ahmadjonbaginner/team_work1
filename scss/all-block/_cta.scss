@@ -1,0 +1,66 @@
+.cta {
+    min-height: 333px;
+    background-color: $card-bg;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include for-tabele-only {
+        flex-direction: column;
+    }
+    &__logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include for-mobile-only {
+            width: 10%;
+        }
+    }
+    &__line {
+        position: absolute;
+        right: 0;
+        top: 0;
+        @include for-mobile-only {
+            display: none;
+        }
+    }
+    &__info {
+        text-align: center;
+        &__nick {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: $main-bg;
+            @include for-mobile-only {
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 2px;
+            }
+        }
+        &__title {
+            max-width: 488px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+            color: $main-bg;
+            @include for-mobile-only {
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+    }
+    &__label {
+        border: none;
+        &__email {
+            border: none;
+            padding: 20px 160px 20px 29px;
+            outline: none;
+            @include for-mobile-only {
+                padding: 15px 60px 15px 20px;
+            }
+        }
+    }
+}

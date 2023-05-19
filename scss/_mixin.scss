@@ -1,0 +1,11 @@
+@mixin for-tabele-only {
+    @media (max-width: 860px) {
+        @content;
+    }
+}
+
+@mixin for-mobile-only {
+    @media (max-width: 767px) {
+        @content;
+    }
+}

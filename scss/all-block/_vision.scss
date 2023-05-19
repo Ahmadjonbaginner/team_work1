@@ -1,0 +1,55 @@
+.vision-sec {
+    padding-top: 96px;
+}
+
+.vision {
+    @include for-mobile-only {
+        text-align: center;
+    }
+    &__nick {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #000000;
+        opacity: 0.87;
+        @include for-mobile-only {
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 2px;
+            opacity: 1;
+        }
+    }
+    &__title {
+        max-width: 701px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 54px;
+        color: $main-color;
+        margin: 16px 0 24px 0;
+        @include for-mobile-only {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+    &__text {
+        max-width: 622px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $main-color;
+        opacity: 0.6;
+        @include for-mobile-only {
+            font-size: 14px;
+            line-height: 22px;
+            opacity: 1;
+            max-width: 100%;
+        }
+    }
+    &__img {
+        max-width: 100%;
+        margin-top: 64px;
+    }
+}
